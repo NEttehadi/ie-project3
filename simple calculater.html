@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter your operators(* or / or + or - or ^ ) .</p>
+
+<button onclick="myFunction()">Click </button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var text;
+  var operator = prompt("What's your operator?", "choose one");
+   var a = prompt("What's your operand?", "firstnumber");
+   var b = prompt("What's your operand?", "secondnumber");
+  
+  switch(operator) {
+    case "+":
+      text = "click the button to continue";
+      var x= parseFloat(a)
+      var y=  x+parseFloat(b)
+       document.getElementById("demo").innerHTML = y;
+       alert( y);
+      break;
+    case "-":
+      text = "click the button to continue";
+      var x= parseFloat(a)
+      var y=  x-parseFloat(b)
+       document.getElementById("demo").innerHTML = y;
+       alert(  y);
+      break;
+    case "/":
+        text = "click the button to continue";
+        var x= parseFloat(a)
+      var y=  x/parseFloat(b)
+       document.getElementById("demo").innerHTML = y;
+       alert(  y);
+      break;
+    case "*":
+      text = "click the button to continue";
+      var x= parseFloat(a)
+      var y=  x*parseFloat(b)
+       document.getElementById("demo").innerHTML = y;
+       alert(  y);
+      break;
+    case "^":
+     text = "click the button to continue";
+      var x= parseFloat(a)
+      var y=  x**parseFloat(b)
+       document.getElementById("demo").innerHTML = y;
+       alert(  y);
+      break;
+    default:
+      text = "Sorry ! this operator is not defined";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
